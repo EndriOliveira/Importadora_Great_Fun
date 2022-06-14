@@ -1,0 +1,39 @@
+.card{
+    width: 75%;
+    margin: 0 auto !important;
+    padding: 5px 0 !important;
+    background: rgb(48,48,48);
+    background: linear-gradient(286deg, rgba(48,48,48,1) 35%, rgba(244,0,0,1) 77%, rgba(143,28,28,1) 100%);
+    border-color: white !important;
+    border-radius: 10px !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto !important;
+}
+.delform{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+#favtab{
+    height: 600px;
+    overflow: auto;
+    width: 75%;
+    margin: 30px auto !important;
+    border: 1px solid white;
+    border-right: 1px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#favtab::-webkit-scrollbar{
+    width: 15px;   /* width of the entire scrollbar */
+}
+#favtab::-webkit-scrollbar-track{
+    background: #F10101;        /* color of the tracking area */
+}
+#favtab::-webkit-scrollbar-thumb{
+    background-color: #000000;    /* color of the scroll thumb */
+}

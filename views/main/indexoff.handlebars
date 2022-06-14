@@ -1,0 +1,549 @@
+<main>
+    <div class="promoprincipal">
+        <a href="https://www.pichau.com.br/promocao/pascoa?utm_source=home&utm_medium=banner&utm_campaign=pascoa_2022">
+            <img src="img/pichaupascoa.jpg" alt="A Fantástica Pruumo de Páscoa">
+        </a>
+    </div>
+    <aside class="socials">
+        <a href="#"><img src="./img/face.png" alt="Facebook"></a>
+        <a href="#"><img src="./img/whatsapp.jpg" alt="Whatsapp"></a>
+        <a href="#"><img src="./img/twitter.jpg" alt="Twitter"></a>
+        <a href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
+    </aside>
+    <section class="main">
+        <!-- Hardware -->
+        <div id="Hardware">
+            <div class="maintit">
+                <h3 class="mainsubtit"><span class="blink">~\</span>Hardware</h3>
+                <a href="#" onclick="login()">Adicionar produto</a>
+            </div>
+            <div class="produtos">
+                {{#each hd}}
+                <div class="produto" data-tilt>
+                    <button class="favoritos" onclick="login()">
+                        <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                    </button>
+                    <a href="#" class="proda">
+                        <div class="prodimg">
+                            <img src="{{img}}" alt="{{nome}}">
+                        </div>
+                        <div class="proddesc">
+                            <div class="subproddesc">
+                                <p>{{nome}}</p>
+                                <div class="fx">
+                                    <hr class="prodhr">
+                                </div>
+                                <span class="vista">à vista</span>
+                                <p class="preco1">{{preco_a_vista}}</p>
+                                <span class="pix">{{desc}}</span>
+                                <div class="prodprazo">
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <p class="precoprazo">{{preco_a_prazo}}</p>
+                                    <span class="cartao">{{parcelas}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{else}}
+                {{/each}}
+                {{!-- <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/ryzen5.jpg"
+                                    alt="Processador AMD Ryzen 5 5500, 6-Core, 12-Threads, 3.6GHz (4.2GHz Turbo), Cache 19MB, AM4, 100-100000457BOX">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Processador AMD Ryzen 5 5500, 6-Core, 12-Threads, 3.6GHz (4.2GHz Turbo), Cache
+                                        19MB, AM4, 100-100000457BOX</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 988,90</p>
+                                    <span class="pix">No pix com 12% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 1.123,75</p>
+                                        <span class="cartao">em até 12x de 93,65 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+  
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/corsair.jpg"
+                                    alt="Memoria Corsair Vengeance RGB RT, 256GB (8x32GB), DDR4, 3200MHz, C16, Preta, CMN256GX4M8Z3200C16">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Memoria Corsair Vengeance RGB RT, 256GB (8x32GB), DDR4, 3200MHz, C16, Preta, CMN256GX4M8Z3200C16</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 10.000,22</p>
+                                    <span class="pix">No pix com 12% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 11.363,89</p>
+                                        <span class="cartao">em até 12x de 946,99 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/tuf-gaming.jpg"
+                                    alt="Placa Mae Asus TUF Gaming B660M-PLUS D4, DDR4, Socket LGA1700, M-ATX, Chipset Intel B660, TUF GAMING B660M-PLUS D4">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Placa Mae Asus TUF Gaming B660M-PLUS D4, DDR4, Socket LGA1700, M-ATX, Chipset Intel B660, TUF GAMING B660M-PLUS D4</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 1.147,90</p>
+                                    <span class="pix">No pix com 12% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 1.304,43</p>
+                                        <span class="cartao">em até 12x de 108,70 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/inteli5.jpg"
+                                    alt="Processador Intel Core i5-12600KF, 10-Core, 16-Threads, 3.7GHz (4.9GHz Turbo), Cache 20MB, LGA1700, BX8071512600KF">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Processador Intel Core i5-12600KF, 10-Core, 16-Threads, 3.7GHz (4.9GHz Turbo), Cache 20MB, LGA1700, BX8071512600KF</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 2.037,90</p>
+                                    <span class="pix">No pix com 12% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 2.315,80</p>
+                                        <span class="cartao">em até 12x de 192,98 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div> --}}
+            </div>
+        </div>
+        <!-- Categorias -->
+        <div>
+            <div class="maintit">
+                <h3 class="mainsubtit"><span class="blink">~\</span>CATEGORIAS</h3>
+            </div>
+            <div class="categorias">
+                <a href="#" class="categoria cate1">
+                    <img src="./img/intel.jpg" alt="Intel">
+                </a>
+                <a href="#" class="categoria">
+                    <img src="./img/amd.png" alt="AMD">
+                </a>
+                <a href="#" class="categoria">
+                    <img src="./img/mancer.jpg" alt="Mancer">
+                </a>
+                <a href="#" class="categoria">
+                    <img src="./img/microsoft.png" alt="Microsoft">
+                </a>
+                <a href="#" class="categoria">
+                    <img src="./img/playstation.jpg" alt="Playstation">
+                </a>
+                <a href="#" class="categoria">
+                    <img src="./img/redragon.png" alt="Redragon">
+                </a>
+                <a href="#" class="categoria cate2">
+                    <img src="./img/asus.jpg" alt="Asus">
+                </a>
+            </div>
+        </div>
+        <!-- Software -->
+        <div id="Software">
+            <div class="maintit">
+                <h3 class="mainsubtit"><span class="blink">~\</span>Software</h3>
+                <a href="#" onclick="login()">Adicionar produto</a>
+            </div>
+            <div class="produtos">
+                {{#each soft}}
+                <div class="produto" data-tilt>
+                    <button class="favoritos" onclick="login()">
+                        <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                    </button>
+                    <a href="#" class="proda">
+                        <div class="prodimg">
+                            <img src="{{img}}" alt="{{nome}}">
+                        </div>
+                        <div class="proddesc">
+                            <div class="subproddesc">
+                                <p>{{nome}}</p>
+                                <div class="fx">
+                                    <hr class="prodhr">
+                                </div>
+                                <span class="vista">à vista</span>
+                                <p class="preco1">{{preco_a_vista}}</p>
+                                <span class="pix">{{desc}}</span>
+                                <div class="prodprazo">
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <p class="precoprazo">{{preco_a_prazo}}</p>
+                                    <span class="cartao">{{parcelas}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{else}}
+                {{/each}}
+                {{!-- <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/edraw.webp"
+                                    alt="Edraw Max para Empresas - 1 pessoa - Plano Vitalício">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Edraw Max para Empresas - 1 pessoa - Plano Vitalício</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 799,00</p>
+                                    <span class="pix"></span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo"></p>
+                                        <span class="cartao"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/photoshop.jpg"
+                                    alt="Photoshop CC 2021 - Vitalício">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Photoshop CC 2021 - Vitalício</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 542,71</p>
+                                    <span class="pix">No pix com 19% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 589,90</p>
+                                        <span class="cartao">em até 12x de 49,16 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+          
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/core.webp"
+                                    alt="CoreIDRAW Graphics Suite 2021 para Windows - Compra Única">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>CoreIDRAW Graphics Suite 2021 para Windows - Compra Única</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 3.200,00</p>
+                                    <span class="pix"></span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo"></p>
+                                        <span class="cartao"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/mcfamily.webp"
+                                    alt="Microsoft 365 Family - Assinatura Anual">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Microsoft 365 Family - Assinatura Anual</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">assinatura anual</span>
+                                    <p class="preco1">R$ 449,00</p>
+                                    <span class="pix"></span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo"></p>
+                                        <span class="cartao"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div> --}}
+            </div>
+        </div>
+        <!-- VideoGames -->
+        <div id="VideoGames">
+            <div class="maintit">
+                <h3 class="mainsubtit"><span class="blink">~\</span>VideoGames</h3>
+                <a href="#" onclick="login()">Adicionar produto</a>
+            </div>
+            <div class="produtos">
+                {{#each games}}
+                <div class="produto" data-tilt>
+                    <button class="favoritos" onclick="login()">
+                        <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                    </button>
+                    <a href="#" class="proda">
+                        <div class="prodimg">
+                            <img src="{{img}}" alt="{{nome}}">
+                        </div>
+                        <div class="proddesc">
+                            <div class="subproddesc">
+                                <p>{{nome}}</p>
+                                <div class="fx">
+                                    <hr class="prodhr">
+                                </div>
+                                <span class="vista">à vista</span>
+                                <p class="preco1">{{preco_a_vista}}</p>
+                                <span class="pix">{{desc}}</span>
+                                <div class="prodprazo">
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <p class="precoprazo">{{preco_a_prazo}}</p>
+                                    <span class="cartao">{{parcelas}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{else}}
+                {{/each}}
+                {{!-- <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+  
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/case.jpg"
+                                    alt="Controller Skin Trust GXT 749K Para XBOX Camuflado, T24176">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Controller Skin Trust GXT 749K Para XBOX Camuflado, T24176</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 52,90</p>
+                                    <span class="pix">No pix com 12% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 60,11</p>
+                                        <span class="cartao">em até 5x de 12,02 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/ps5.jpg"
+                                    alt="Console Sony Playstation 5 1TB 3.5GHz">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Console Sony Playstation 5 1TB 3.5GHz</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ R$ 4.499,90</p>
+                                    <span class="pix">No pix</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo"></p>
+                                        <span class="cartao">em até 10x de R$ 449,98 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/xseriesxhalo.jpg"
+                                    alt="Console Xbox One Series X 1tb 8k Hdr Halo Infinite Limited Edition">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Console Xbox One Series X 1tb 8k Hdr Halo Infinite Limited Edition</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 6.375,00</p>
+                                    <span class="pix">No pix com 15% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 7.500,00</p>
+                                        <span class="cartao">em até 10x de 750,00 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="produto" data-tilt>
+                    
+                        <button class="favoritos" onclick="login()">
+                            <img src="img/icons8-loading-heart.gif" alt="Adicionar aos favoritos">
+                        </button>
+
+                        <a href="#" class="proda">
+                            <div class="prodimg">
+                                <img src="img/elden.jpg"
+                                    alt="Jogo Elden Ring, PS4">
+                            </div>
+                            <div class="proddesc">
+                                <div class="subproddesc">
+                                    <p>Jogo Elden Ring, PS4</p>
+                                    <div class="fx">
+                                        <hr class="prodhr">
+                                    </div>
+                                    <span class="vista">à vista</span>
+                                    <p class="preco1">R$ 242,91</p>
+                                    <span class="pix">No pix com 10% de desconto</span>
+                                    <div class="prodprazo">
+                                        <div class="fx">
+                                            <hr class="prodhr">
+                                        </div>
+                                        <p class="precoprazo">R$ 269,90</p>
+                                        <span class="cartao">em até 10x de 26,99 sem juros no cartão</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div> --}}
+            </div>
+        </div>
+    </section>
+</main>

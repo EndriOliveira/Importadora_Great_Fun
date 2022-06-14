@@ -1,0 +1,84 @@
+@media screen and (max-width:1167px){
+    .categorias img{
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        margin: 2px 5px !important;
+    }
+}
+@media screen and (max-width:1239px){
+    .prodimg{
+        height: 200px;
+    }
+    .prodimg img{
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        border: 1px solid red;
+    }
+    .produto{
+        border: 1px solid #ffffff;
+        height: 530px;
+    }
+}
+@media screen and (max-width:410px){
+    #Pagamento h4{
+        display: none;
+    }
+    .cartoes{
+        width: 148px;
+        height: 62px;
+    }
+    .Boa{
+        font-size: 14px;
+    }
+    #Loja a{
+        font-size: 14px;
+    }
+    #BarraFinal p{
+        font-size: 14px;
+    }
+    .escudo{
+        display: none;
+    }
+}
+@media screen and (max-width:370px){
+    .titcamara h2{
+        font-size: 20px ;
+    }
+}
+@media screen and (max-width:700px){
+    .user {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        width: 100px;
+        justify-content: center;
+    }
+    .navcamara{
+        display: none;
+    }
+    .cad{
+        background-color: #ffffff;
+        width: 220px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 25%;
+        top: 22%;
+        border-radius: 10px;
+    }
+    .login{
+        background-color: #ffffff;
+        width: 220px;
+        height: 160px;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 25%;
+        top: 22%;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,154 @@
+.promoprincipal img{
+    min-height: 75px;
+    max-height: 10000px;
+    margin-top: 10px !important;
+}
+.promoprincipal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.main{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto !important;
+    margin-top: 40px !important;
+}
+.maintit{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.maintit a{
+    color: #ffffff;
+}
+.mainsubtit{
+    color: #ff3325;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+}
+.mainsubtit span{
+    color: #ff3325;
+    font-family: 'Courier New', Courier, monospace;
+}
+.produtos{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    gap: 1%;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 0 !important;
+}
+.produto{
+    width: 270px;
+    height: 600px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 10px !important;
+}
+.prodimg{
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proddesc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subproddesc{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto !important;
+}
+.produto img{
+    width: 185px;
+    height: 185px;
+    border-radius: 10px;
+}
+.fx{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+}
+.proda{
+    text-decoration: none;
+}
+.prodhr{
+    color: #ff3325;
+    width: 50px;
+}
+.favoritos img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+}
+.favoritos{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-color: transparent;
+    box-shadow: 0 0 7px red;
+}
+.prodprazo{
+    height: 100px;
+}
+.categorias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categoria img{
+    width: 150px;
+    height: 150px;
+}
+.cate1 img{
+    width: 150px;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cate2 img{
+    width: 150px;
+    height: 150px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.categoria:hover{
+    transform: scale(1.1);
+    box-shadow: 0 1px 6px lightblue;
+    transition: 0.5s;
+}
+.vista{
+    font-size: 10px;
+    color: #0cad0c;
+}
+.pix{
+    font-size: 10px;
+}
+.cartao{
+    font-size: 12px;
+}
+.preco1{
+    color: #0cad0c;
+    font-size: 18px;
+    font-weight: 700;
+}
+.precoprazo{
+    color: #d21d09;
+    font-weight: 700;
+    font-size: 16px;
+}

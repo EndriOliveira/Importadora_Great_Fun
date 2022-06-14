@@ -1,0 +1,48 @@
+<div class="home">
+    <a href="/home"><img src="./img/home.png" alt="Página inicial"></a>
+</div>
+<aside class="socials">
+    <a href="#"><img src="./img/face.png" alt="Facebook"></a>
+    <a href="#"><img src="./img/whatsapp.jpg" alt="Whatsapp"></a>
+    <a href="#"><img src="./img/twitter.jpg" alt="Twitter"></a>
+    <a href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
+</aside>
+<form action="/newsoftware" method="post" class="newprod">
+    <label for="img">Endereço da imagem</label>
+    <input type="text" id="img" name="img" placeholder="Endereço da imagem">
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome">
+
+    <label for="valor_a_vista">Preço à vista</label>
+    <input type="text" id="valor_a_vista" name="valor_a_vista" placeholder="Preço à vista">
+    
+    <label for="desc">Desconto</label>
+    <input type="text" id="desc" name="desc" placeholder="Desconto (em %)">
+
+    <label for="valor_a_prazo">Preço à prazo</label>
+    <input type="text" id="valor_a_prazo" name="valor_a_prazo" placeholder="Preço à prazo">
+
+    <label for="parcelas">Parcelas</label>
+    <input type="text" id="parcelas" name="parcelas" placeholder="Parcelas">
+
+    <div class="log">
+        <button class="sublog1">Cadastrar</button>
+    </div>
+</form>
+
+{{#each produtos2}}
+<div class="card1 mt-4">
+    <div class="card-body">
+        <h4 class="fav">{{nome}}</h4>
+        <p class="fav">Valor à vista: {{preco_a_vista}}</p>
+        <p class="fav">Valor à prazo: {{preco_a_prazo}}</p>
+        <p class="fav">Até {{parcelas}}</p>
+        <p class="fav">{{createdAt}}</p>
+        <form action="/deletesf/{{id}}" class="delform" method="post">
+            <button type="submit" class="btn btn-light mt-2">Excluir produto</button>
+        </form>
+    </div>
+</div>
+{{else}}
+{{/each}}

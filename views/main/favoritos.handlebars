@@ -1,0 +1,26 @@
+<div class="home">
+    <a href="/home"><img src="./img/home.png" alt="Página inicial"></a>
+</div>
+<aside class="socials">
+    <a href="#"><img src="./img/face.png" alt="Facebook"></a>
+    <a href="#"><img src="./img/whatsapp.jpg" alt="Whatsapp"></a>
+    <a href="#"><img src="./img/twitter.jpg" alt="Twitter"></a>
+    <a href="#"><img src="./img/insta.jpg" alt="Instagram"></a>
+</aside>
+<div id="favtab">
+    {{#each produtos}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="fav">{{nome}}</h4>
+            <p class="fav">Valor à vista: {{preco_a_vista}}</p>
+            <p class="fav">Valor à prazo: {{preco_a_prazo}}</p>
+            <p class="fav">{{parcelas}}</p>
+            <p class="fav">{{createdAt}}</p>
+            <form action="/delete{{id}}" class="delform" method="post">
+                <button type="submit" class="btn btn-light mt-2">Excluir produto</button>
+            </form>
+        </div>
+    </div>
+    {{else}}
+    {{/each}}
+</div>

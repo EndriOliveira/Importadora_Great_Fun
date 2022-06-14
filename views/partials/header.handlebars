@@ -1,0 +1,64 @@
+<header>
+    <div class="camara">
+        <div class="subcamara">
+            <div class="titcamara">
+                <h2 data-tilt><span class="blink">~\</span><span class="rainbow">Importadora Great Fun</span><span
+                        class="blink">;</span></h2>
+            </div>
+            <div class="navcamara">
+                <nav class="nav1camara">
+                    <a href="#">Home</a>
+                    <a href="#Hardware">Hardware</a>
+                    <a href="#Software">Software</a>
+                    <a href="#VideoGames">Videogames</a>
+                    <a href="#Barradecor">Contato</a>
+                    <a href="#" onclick="cad()">Cadastro</a>
+                </nav>
+            </div>
+        </div>
+        <div class="sub1camara">
+            <input type="text" placeholder="Pesquise">
+            <button><img src="./img/loupe.svg" alt="Pesquise"></button>
+            <a href="#" class="user" onclick="cad()">
+                Cadastro
+            </a>
+        </div>
+    </div>
+    <div id="Fixados">
+        <div id="cad" class="none" data-tilt>
+            <div class="subcad">
+                <form action="/cadastro" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="logininput" name="nome" placeholder="Nome" required="required">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" class="logininput1" name="email" placeholder="E-mail" required="required">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" class="logininput2" name="senha" placeholder="Senha" required="required">
+                    <button class="sublog">Cadastre-se!</button>
+                    <div class="log">
+                        <span>Possui conta?<a href="#" onclick="log()">Login</a></span>
+                        <p onclick="fechacad()">[X]</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="log" class="none" data-tilt>
+            <div class="subcad">
+                <form action="/login" method="post">
+                    <label for="emaillogin">Email</label>
+                    <input type="text" id="emaillogin" class="logininput3" name="email" placeholder="E-mail" required="required">
+                    <label for="senhalogin">Senha</label>
+                    <input type="password" id="senhalogin" class="logininput4" name="senha" placeholder="Senha" required="required">
+                    <div class="log">
+                        <button class="sublog1">Login</button>
+                        <p onclick="fechalog()">[X]</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="top">Topo</a>
+        </div>
+    </div>
+    <marquee class="oferta" behavior="scroll" direction="left" scrollamount="10">Olha a Oferta Daora Passando</marquee>
+</header>
